@@ -14,9 +14,7 @@
         var numOfWon = 0;
         var numOfLost = 0;
 
-        var forNumber = parseInt(prompt("Enter Your Loop Number : "));
-
-        for (var i = 1; i <= forNumber; i++) {
+       
             var number = Number(prompt("Enter Your Number 1 to 10 : "));
 
             var domNum = Math.floor(Math.random() * 10) + 1;
@@ -49,7 +47,7 @@
 
                 // console.log("Sorry !");
             }
-        }
+     
 
         document.write("Total Number of Won = " + numOfWon + "<br>");
         document.write("Total Number of Lost = " + numOfLost + "<br>");
