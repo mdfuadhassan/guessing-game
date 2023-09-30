@@ -14,42 +14,40 @@
         var numOfWon = 0;
         var numOfLost = 0;
 
-        var forNumber = parseInt(prompt("Enter Your Loop Number : "));
 
-        for (var i = 1; i <= forNumber; i++) {
-            var number = Number(prompt("Enter Your Number 1 to 10 : "));
+        var number = Number(prompt("Enter Your Number 1 to 10 : "));
 
-            var domNum = Math.floor(Math.random() * 10) + 1;
+        var domNum = Math.floor(Math.random() * 10) + 1;
 
-            if (number == domNum) {
-                document.write("You Have Won <br>");
-                document.write("<br>---------------------------<br>");
+        if (number == domNum) {
+            document.write("You Have Won <br>");
+            document.write("<br>---------------------------<br>");
 
-                // console.log("You Have Won");
-                // console.log("------------------------------------");
+            // console.log("You Have Won");
+            // console.log("------------------------------------");
 
-                numOfWon++;
-            }
-
-            else if (number != domNum) {
-                document.write("Your Number is " + number + "<br>");
-                document.write("Random Number is " + domNum + "<br>");
-                document.write("<br>");
-                document.write("You Have Lost ! <br>");
-                document.write("<br>---------------------------<br>");
-
-                // console.log("You Have Lost ! ." + " Random Number is " + domNum + ". Your Number is " + number + " .");
-                // console.log("------------------------------------");
-
-                numOfLost++;
-            }
-
-            else {
-                document.write("Sorry !");
-
-                // console.log("Sorry !");
-            }
+            numOfWon++;
         }
+
+        else if (number != domNum) {
+            document.write("Your Number is " + number + "<br>");
+            document.write("Random Number is " + domNum + "<br>");
+            document.write("<br>");
+            document.write("You Have Lost ! <br>");
+            document.write("<br>---------------------------<br>");
+
+            // console.log("You Have Lost ! ." + " Random Number is " + domNum + ". Your Number is " + number + " .");
+            // console.log("------------------------------------");
+
+            numOfLost++;
+        }
+
+        else {
+            document.write("Sorry !");
+
+            // console.log("Sorry !");
+        }
+
 
         document.write("Total Number of Won = " + numOfWon + "<br>");
         document.write("Total Number of Lost = " + numOfLost + "<br>");
